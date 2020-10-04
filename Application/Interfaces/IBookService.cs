@@ -5,6 +5,6 @@ namespace Application.Interfaces
 {
     public interface IBookService
     {
-        BookViewModel GetBooks();
+        BookListViewModel GetBooks();
     }
 }

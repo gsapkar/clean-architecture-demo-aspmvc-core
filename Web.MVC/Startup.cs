@@ -14,6 +14,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Infrastructure.Data.Context;
 using Infrastructure.IoC;
+using Application;
 
 namespace Web.MVC
 {
@@ -43,6 +44,10 @@ namespace Web.MVC
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
+
+            services.AddApplicationLayer();
+
             services.AddControllersWithViews();
             services.AddRazorPages();
         }

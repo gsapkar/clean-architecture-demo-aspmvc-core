@@ -20,7 +20,7 @@ namespace Web.MVC.Controllers
 
         public IActionResult Index()
         {
-            BookViewModel model = _bookService.GetBooks();
+            BookListViewModel model = _bookService.GetBooks();
 
             return View(model);
         }

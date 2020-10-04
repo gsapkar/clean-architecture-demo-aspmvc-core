@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using Application.Interfaces;
 using Application.ViewModels;
+using AutoMapper;
 using Domain.Interfaces;
 
 namespace Application.Services
@@ -8,17 +10,20 @@ namespace Application.Services
     public class BookService : IBookService
     {
         private readonly IBookRepository _bookRepository;
+        private readonly IMapper _mapper;
 
-        public BookService(IBookRepository bookRepository)
+        public BookService(IBookRepository bookRepository, IMapper mapper)
         {
             _bookRepository = bookRepository;
+            _mapper = mapper;
         }
 
-        public BookViewModel GetBooks()
+        public BookListViewModel GetBooks()
         {
-            return new BookViewModel()
+            var booksDto = _mapper.Map<IEnumerable<BookDTO>>(_bookRepository.GetAll());
+            return new BookListViewModel()
             {
-                Books = _bookRepository.GetBooks()
+                Books = booksDto
             };
         }
     }

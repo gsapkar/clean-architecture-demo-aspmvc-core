@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using Domain.Interfaces.Base;
 using Domain.Models;
 
 namespace Domain.Interfaces
 {
-    public interface IBookRepository
+    public interface IBookRepository: IBaseRepository<Book>
     {
-        IEnumerable<Book> GetBooks();
+        Book GetByISBN(string isbn);
     }
 }

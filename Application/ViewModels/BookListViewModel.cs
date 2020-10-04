@@ -4,8 +4,8 @@ using Domain.Models;
 
 namespace Application.ViewModels
 {
-    public class BookViewModel
+    public class BookListViewModel
     {
-        public IEnumerable<Book> Books { get; set; }
+        public IEnumerable<BookDTO> Books { get; set; }
     }
 }

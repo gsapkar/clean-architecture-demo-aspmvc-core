@@ -8,5 +8,6 @@
     <Folder Include="Models\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Models\Base\" />
+    <Folder Include="Interfaces\Base\" />
   </ItemGroup>
 </Project>
