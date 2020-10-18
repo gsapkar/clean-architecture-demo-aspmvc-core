@@ -5,7 +5,7 @@ namespace Domain.Interfaces.Base
 {
     public interface IBaseRepository<T> where T : class
     {
-        T GetById(int id);
+        T GetById(Guid id);
         IReadOnlyList<T> GetAll();
         IReadOnlyList<T> GetPagedReponse(int pageNumber, int pageSize);
         T Add(T entity);

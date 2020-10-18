@@ -9,7 +9,7 @@ namespace Application.Mappings
     {
         public BookProfile()
         {
-            CreateMap<Book, BookDTO>().ReverseMap();
+            CreateMap<Book, BookViewModel>().ReverseMap();
         }
     }
 }

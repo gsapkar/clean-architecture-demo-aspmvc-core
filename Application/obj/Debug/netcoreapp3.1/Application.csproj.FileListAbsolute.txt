@@ -1,0 +1,12 @@
+/Users/goce/Projects/CleanArchitectureDemo/Application/bin/Debug/netcoreapp3.1/Application.deps.json
+/Users/goce/Projects/CleanArchitectureDemo/Application/bin/Debug/netcoreapp3.1/Application.dll
+/Users/goce/Projects/CleanArchitectureDemo/Application/bin/Debug/netcoreapp3.1/Application.pdb
+/Users/goce/Projects/CleanArchitectureDemo/Application/bin/Debug/netcoreapp3.1/Domain.dll
+/Users/goce/Projects/CleanArchitectureDemo/Application/bin/Debug/netcoreapp3.1/Domain.pdb
+/Users/goce/Projects/CleanArchitectureDemo/Application/obj/Debug/netcoreapp3.1/Application.csprojAssemblyReference.cache
+/Users/goce/Projects/CleanArchitectureDemo/Application/obj/Debug/netcoreapp3.1/Application.AssemblyInfoInputs.cache
+/Users/goce/Projects/CleanArchitectureDemo/Application/obj/Debug/netcoreapp3.1/Application.AssemblyInfo.cs
+/Users/goce/Projects/CleanArchitectureDemo/Application/obj/Debug/netcoreapp3.1/Application.csproj.CoreCompileInputs.cache
+/Users/goce/Projects/CleanArchitectureDemo/Application/obj/Debug/netcoreapp3.1/Application.csproj.CopyComplete
+/Users/goce/Projects/CleanArchitectureDemo/Application/obj/Debug/netcoreapp3.1/Application.dll
+/Users/goce/Projects/CleanArchitectureDemo/Application/obj/Debug/netcoreapp3.1/Application.pdb

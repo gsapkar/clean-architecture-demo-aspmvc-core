@@ -17,7 +17,7 @@ namespace Infrastructure.Data.Repositories.Base
             _dbContext = dbContext;
         }
 
-        public virtual T GetById(int id)
+        public virtual T GetById(Guid id)
         {
             return _dbContext.Set<T>().Find(id);
         }
@@ -34,7 +34,7 @@ namespace Infrastructure.Data.Repositories.Base
 
         public T Add(T entity)
         {
-            _dbContext.Set<T>().AddAsync(entity);
+            _dbContext.Set<T>().Add(entity);
             _dbContext.SaveChanges();
             return entity;
         }

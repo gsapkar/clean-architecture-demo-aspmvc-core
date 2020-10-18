@@ -6,8 +6,6 @@ using Application.Interfaces;
 using Application.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
-// For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace Web.MVC.Controllers
 {
     public class BookController : Controller
@@ -23,6 +21,37 @@ namespace Web.MVC.Controllers
             BookListViewModel model = _bookService.GetBooks();
 
             return View(model);
+        }
+
+        public IActionResult AddOrEdit(Guid id)
+        {
+           if (id == Guid.Empty)
+            {
+                return View();
+            }
+
+            var editBookViewmodel = _bookService.GetBookById(id);
+
+            return View(editBookViewmodel);
+           
+        }
+
+        [HttpPost]
+        public IActionResult AddOrEdit(BookViewModel bookViewModel)
+        {
+            if (bookViewModel.Id == Guid.Empty)
+            {
+                _bookService.AddBook(bookViewModel);
+                
+            }
+            else
+            {
+                _bookService.EditBook(bookViewModel);
+
+            }
+
+            return RedirectToAction("Index");
+
         }
     }
 }

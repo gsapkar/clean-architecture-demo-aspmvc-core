@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Domain.Models.Base;
 
 namespace Domain.Models
@@ -8,5 +9,8 @@ namespace Domain.Models
         public string Name { get; set; }
         public string ISBN { get; set; }
         public string AuthorName { get; set; }
+        public int InStock { get; set; }
+
+        public ICollection<BookReader> BookReaders { get; set; }
     }
 }

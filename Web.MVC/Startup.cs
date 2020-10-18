@@ -48,6 +48,7 @@ namespace Web.MVC
 
             services.AddApplicationLayer();
 
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddControllersWithViews();
             services.AddRazorPages();
         }

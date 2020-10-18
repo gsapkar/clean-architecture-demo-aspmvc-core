@@ -4,6 +4,7 @@ using Application.Interfaces;
 using Application.ViewModels;
 using AutoMapper;
 using Domain.Interfaces;
+using Domain.Models;
 
 namespace Application.Services
 {
@@ -20,11 +21,37 @@ namespace Application.Services
 
         public BookListViewModel GetBooks()
         {
-            var booksDto = _mapper.Map<IEnumerable<BookDTO>>(_bookRepository.GetAll());
+            var booksDto = _mapper.Map<IEnumerable<BookViewModel>>(_bookRepository.GetAll());
             return new BookListViewModel()
             {
                 Books = booksDto
             };
+        }
+
+        public BookViewModel GetBookById(Guid id)
+        {
+            var bookVm = _mapper.Map<BookViewModel>(_bookRepository.GetById(id));
+
+            return bookVm;
+        }
+
+
+        public BookViewModel AddBook(BookViewModel bookRequest)
+        {
+            var book = _mapper.Map<Book>(bookRequest);
+
+            var addedBook = _bookRepository.Add(book);
+
+            return _mapper.Map<BookViewModel>(addedBook);
+        }
+
+        
+
+        public void EditBook(BookViewModel bookRequest)
+        {
+            var book = _mapper.Map<Book>(bookRequest);
+
+            _bookRepository.Update(book);
         }
     }
 }

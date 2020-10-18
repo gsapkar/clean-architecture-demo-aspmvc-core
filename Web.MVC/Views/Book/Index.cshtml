@@ -1,22 +1,35 @@
 ﻿
 @model Application.ViewModels.BookListViewModel
 
-<table id="book" class="table table-bordered table-hover">
-    <thead>
-        <tr class="">
-            <th>Name</th>
-            <th>ISBN</th>
-            <th>Author</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var book in Model.Books)
-        {
-            <tr style="height: 60px;">
-                <td>@book.Name</td>
-                <td>@book.ISBN</td>
-                <td>@book.AuthorName</td>
-            </tr>
-        }
-    </tbody>
-</table>
+    <div class="row">
+        <a class="btn btn-primary" asp-controller="Book" asp-action="AddOrEdit">Add new</a>
+    </div>
+    <div class="row">
+        <table id="book" class="table table-bordered table-hover">
+            <thead>
+                <tr class="">
+                    <th>Name</th>
+                    <th>ISBN</th>
+                    <th>Author</th>
+                    <th>In Stock</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var book in Model.Books)
+                {
+                <tr style="height: 60px;">
+                    <td>@book.Name</td>
+                    <td>@book.ISBN</td>
+                    <td>@book.AuthorName</td>
+                    <td>@book.InStock</td>
+                    <td>
+                        <a class="btn btn-primary" asp-controller="Book" asp-action="AddOrEdit" asp-route-id="@book.Id">Edit</a>
+                        <a class="btn btn-info" asp-controller="Book" asp-action="Loan" asp-route-id="@book.Id">Loan</a>
+
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
