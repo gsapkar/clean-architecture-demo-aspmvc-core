@@ -53,5 +53,20 @@ namespace Web.MVC.Controllers
             return RedirectToAction("Index");
 
         }
+
+        public IActionResult Loan(Guid id)
+        {
+            BookViewModel model = _bookService.GetBookById(id);
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult Loan(Guid id, Guid readerId)
+        {
+            BookViewModel model = _bookService.GetBookById(id);
+
+            return View(model);
+        }
     }
 }

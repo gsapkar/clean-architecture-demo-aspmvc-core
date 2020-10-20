@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using Domain.Models.Base;
+
 namespace Domain.Models
 {
     public class Reader : AuditableBaseEntity

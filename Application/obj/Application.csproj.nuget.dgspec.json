@@ -14,7 +14,7 @@
         "outputPath": "/Users/goce/Projects/CleanArchitectureDemo/Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/goce/.nuget/NuGet/NuGet.Config"
+          "/Users/goce/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -78,7 +78,7 @@
         "outputPath": "/Users/goce/Projects/CleanArchitectureDemo/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/goce/.nuget/NuGet/NuGet.Config"
+          "/Users/goce/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"

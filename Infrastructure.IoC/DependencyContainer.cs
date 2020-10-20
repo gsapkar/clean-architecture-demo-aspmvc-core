@@ -13,9 +13,16 @@ namespace Infrastructure.IoC
         {
             //Application
             services.AddScoped<IBookService, BookService>();
+            services.AddScoped<IReaderService, ReaderService>();
+
 
             //Domain.Interfaces | Infra.Data.Repositories
             services.AddScoped<IBookRepository, BookRepository>();
+            services.AddScoped<IReaderRepository, ReaderRepository>();
+            services.AddScoped<IBookReaderRepository, BookReaderRepository>();
+
+            services.AddScoped<SessionContext>();
+
         }
     }
 }

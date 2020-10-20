@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "jAbUrSHLGJO0Fa0h+MH7bse8yE4tq0s5tMQYG785R/Sq+c6oL7BQOJ77O9vmqp2RkLCI0t4ZMcpM5/iUEJzx4Q==",
+  "dgSpecHash": "DPYA02ztfwUWT1NnxKNU3rvbQUuSLt64nGhSBdrP/UnFBwV0ebrfS4flJDCo3Acry0mlT2pF1O3QHmSnht2nTA==",
   "success": true,
   "projectFilePath": "/Users/goce/Projects/CleanArchitectureDemo/Infrastructure.Data/Infrastructure.Data.csproj",
   "expectedPackageFiles": [

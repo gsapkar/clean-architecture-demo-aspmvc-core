@@ -30,5 +30,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Book\" />
+    <Folder Include="Views\Reader\" />
+    <Folder Include="Filters\" />
   </ItemGroup>
 </Project>

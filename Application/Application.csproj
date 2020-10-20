@@ -9,6 +9,8 @@
     <Folder Include="Services\" />
     <Folder Include="ViewModels\" />
     <Folder Include="Mappings\" />
+    <Folder Include="ViewModels\Book\" />
+    <Folder Include="ViewModels\Reader\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Domain\Domain.csproj" />

@@ -21,10 +21,10 @@ namespace Application.Services
 
         public BookListViewModel GetBooks()
         {
-            var booksDto = _mapper.Map<IEnumerable<BookViewModel>>(_bookRepository.GetAll());
+            var booksViewModel = _mapper.Map<IEnumerable<BookViewModel>>(_bookRepository.GetAll());
             return new BookListViewModel()
             {
-                Books = booksDto
+                Books = booksViewModel
             };
         }
 

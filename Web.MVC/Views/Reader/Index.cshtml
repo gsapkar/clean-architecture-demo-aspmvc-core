@@ -1,0 +1,33 @@
+﻿
+@model Application.ViewModels.Reader.ReaderListViewModel
+
+    <div class="row">
+        <a class="btn btn-primary" asp-controller="Reader" asp-action="AddOrEdit">Add new</a>
+    </div>
+    <div class="row">
+        <table id="readers" class="table table-bordered table-hover">
+            <thead>
+                <tr class="">
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone Number</th>
+                    <th>Created On</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var reader in Model.Readers)
+                {
+                <tr style="height: 60px;">
+                    <td>@reader.FullName</td>
+                    <td>@reader.Email</td>
+                    <td>@reader.PhoneNumber</td>
+                    <td>@reader.Created.ToShortDateString()</td>
+                    <td>
+                        <a class="btn btn-primary" asp-controller="Reader" asp-action="AddOrEdit" asp-route-id="@reader.Id">Edit</a>
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>

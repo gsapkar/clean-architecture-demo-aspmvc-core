@@ -15,6 +15,7 @@ using Microsoft.Extensions.Hosting;
 using Infrastructure.Data.Context;
 using Infrastructure.IoC;
 using Application;
+using Web.MVC.Filters;
 
 namespace Web.MVC
 {
@@ -40,15 +41,21 @@ namespace Web.MVC
                     Configuration.GetConnectionString("DefaultConnection"));
             });
 
-            RegisterServices(services);
-
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
 
+            RegisterServices(services);
+
+            services.AddMvc()
+                    .AddControllersAsServices();
+
             services.AddApplicationLayer();
 
-            services.AddControllersWithViews().AddRazorRuntimeCompilation();
+            services.AddControllersWithViews(options =>
+            {
+                options.Filters.Add(typeof(SessionFilter));
+            }).AddRazorRuntimeCompilation();
             services.AddControllersWithViews();
             services.AddRazorPages();
         }
