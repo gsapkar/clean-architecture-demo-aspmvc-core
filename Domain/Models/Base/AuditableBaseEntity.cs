@@ -4,9 +4,9 @@ namespace Domain.Models.Base
     public abstract class AuditableBaseEntity
     {
         public virtual Guid Id { get; set; }
-        public string CreatedBy { get; set; }
-        public DateTime Created { get; set; }
-        public string LastModifiedBy { get; set; }
-        public DateTime? LastModified { get; set; }
+        public virtual string CreatedBy { get; set; }
+        public virtual DateTime Created { get; set; }
+        public virtual string LastModifiedBy { get; set; }
+        public virtual DateTime? LastModified { get; set; }
     }
 }

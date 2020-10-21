@@ -6,7 +6,6 @@ namespace Application.ViewModels
     public class BookViewModel
     {
         //   ADD MODEL VALIDATION
-
         public Guid Id { get; set; }
         public string Name { get; set; }
         public string ISBN { get; set; }

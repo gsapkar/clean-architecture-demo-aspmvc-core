@@ -13,6 +13,7 @@ namespace Application.ViewModels.Reader
         public string Email { get; set; }
         [Display(Name = "Phone Number")]
         public string PhoneNumber { get; set; }
+        [Display(Name = "Joined")]
         public DateTime Created { get; set; }
 
         public string FullName

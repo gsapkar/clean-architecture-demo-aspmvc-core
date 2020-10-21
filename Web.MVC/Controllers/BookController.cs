@@ -10,6 +10,7 @@ namespace Web.MVC.Controllers
 {
     public class BookController : Controller
     {
+        
         private readonly IBookService _bookService;
         public BookController(IBookService bookService)
         {
@@ -41,11 +42,13 @@ namespace Web.MVC.Controllers
         {
             if (bookViewModel.Id == Guid.Empty)
             {
+
                 _bookService.AddBook(bookViewModel);
                 
             }
             else
             {
+                
                 _bookService.EditBook(bookViewModel);
 
             }

@@ -46,12 +46,13 @@ namespace Web.MVC.Controllers
         { 
             if (readerViewModel.Id == Guid.Empty)
             {
-             
+               
                 _readerService.AddReader(readerViewModel);
 
             }
             else
             {
+               
                 _readerService.EditReader(readerViewModel);
 
             }

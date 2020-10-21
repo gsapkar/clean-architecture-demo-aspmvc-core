@@ -44,6 +44,9 @@ namespace Web.MVC
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
 
+            // registering the HttpContextAccessor which we use
+            // for auditing in the LibraryDbContext
+            services.AddHttpContextAccessor();
 
             RegisterServices(services);
 
