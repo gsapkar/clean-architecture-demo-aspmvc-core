@@ -21,8 +21,6 @@ namespace Infrastructure.IoC
             services.AddScoped<IReaderRepository, ReaderRepository>();
             services.AddScoped<IBookReaderRepository, BookReaderRepository>();
 
-            services.AddScoped<SessionContext>();
-
         }
     }
 }

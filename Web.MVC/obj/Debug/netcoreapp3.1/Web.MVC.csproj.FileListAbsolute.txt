@@ -447,6 +447,7 @@
 /Users/goce/Projects/CleanArchitectureDemo/Web.MVC/obj/Debug/netcoreapp3.1/Razor/Views/Home/Privacy.cshtml.g.cs
 /Users/goce/Projects/CleanArchitectureDemo/Web.MVC/obj/Debug/netcoreapp3.1/Razor/Views/Reader/AddOrEdit.cshtml.g.cs
 /Users/goce/Projects/CleanArchitectureDemo/Web.MVC/obj/Debug/netcoreapp3.1/Razor/Views/Reader/Index.cshtml.g.cs
+/Users/goce/Projects/CleanArchitectureDemo/Web.MVC/obj/Debug/netcoreapp3.1/Razor/Views/Reader/LoanBook.cshtml.g.cs
 /Users/goce/Projects/CleanArchitectureDemo/Web.MVC/obj/Debug/netcoreapp3.1/Razor/Views/Shared/Error.cshtml.g.cs
 /Users/goce/Projects/CleanArchitectureDemo/Web.MVC/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_Layout.cshtml.g.cs
 /Users/goce/Projects/CleanArchitectureDemo/Web.MVC/obj/Debug/netcoreapp3.1/Razor/Views/Shared/_LoginPartial.cshtml.g.cs

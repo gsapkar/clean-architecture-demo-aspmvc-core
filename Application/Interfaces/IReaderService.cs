@@ -10,5 +10,8 @@ namespace Application.Interfaces
         ReaderViewModel AddReader(ReaderViewModel readerRequest);
         void EditReader(ReaderViewModel readerRequest);
         ReaderListViewModel SearchByFullName(string searchTerm);
+        void LoanBook(Guid readerId, Guid bookId);
+        LoanBookViewModel GetReaderWithLoanedBooks(Guid id);
+        void ReturnBook(Guid readerId, Guid bookId);
     }
 }

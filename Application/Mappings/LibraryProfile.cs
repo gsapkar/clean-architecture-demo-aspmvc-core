@@ -12,6 +12,7 @@ namespace Application.Mappings
         {
             CreateMap<Book, BookViewModel>().ReverseMap();
             CreateMap<Reader, ReaderViewModel>().ReverseMap();
+            CreateMap<Reader, LoanBookViewModel>().ReverseMap();
         }
     }
 }

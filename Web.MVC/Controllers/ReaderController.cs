@@ -13,12 +13,10 @@ namespace Web.MVC.Controllers
     public class ReaderController : Controller
     {
         private readonly IReaderService _readerService;
-        private readonly SessionContext _sessionContext;
 
-        public ReaderController(IReaderService readerService, SessionContext sessionContext)
+        public ReaderController(IReaderService readerService)
         {
             _readerService = readerService;
-            _sessionContext = sessionContext;
         }
 
         public IActionResult Index()
@@ -66,6 +64,31 @@ namespace Web.MVC.Controllers
             ReaderListViewModel model = _readerService.SearchByFullName(searchTerm);
 
             return Json(model.Readers);
+        }
+
+        public IActionResult LoanBook(Guid id)
+        {
+            LoanBookViewModel model = _readerService.GetReaderWithLoanedBooks(id);
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult LoanBook(Guid readerId, Guid bookId)
+        {
+            _readerService.LoanBook(readerId, bookId);
+
+            LoanBookViewModel model = _readerService.GetReaderWithLoanedBooks(readerId);
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult ReturnBook(Guid readerId, Guid bookId)
+        {
+            _readerService.ReturnBook(readerId, bookId);
+
+            return RedirectToAction("LoanBook", new { id = readerId});
         }
     }
 }

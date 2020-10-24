@@ -25,6 +25,8 @@
                     <td>@reader.Created.ToShortDateString()</td>
                     <td>
                         <a class="btn btn-primary" asp-controller="Reader" asp-action="AddOrEdit" asp-route-id="@reader.Id">Edit</a>
+                        <a class="btn btn-info" asp-controller="Reader" asp-action="LoanBook" asp-route-id="@reader.Id">Loan</a>
+
                     </td>
                 </tr>
                 }

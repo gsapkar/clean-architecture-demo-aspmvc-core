@@ -8,5 +8,7 @@ namespace Domain.Interfaces
     public interface IBookRepository: IBaseRepository<Book>
     {
         Book GetByISBN(string isbn);
+
+        IEnumerable<Book> FullTextSearch(string searchTerm);
     }
 }

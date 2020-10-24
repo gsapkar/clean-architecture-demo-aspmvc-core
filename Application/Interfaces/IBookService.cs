@@ -9,5 +9,6 @@ namespace Application.Interfaces
         BookViewModel GetBookById(Guid id);
         BookViewModel AddBook(BookViewModel bookRequest);
         void EditBook(BookViewModel bookRequest);
+        BookListViewModel FullTextSearch(string searchTerm);
     }
 }

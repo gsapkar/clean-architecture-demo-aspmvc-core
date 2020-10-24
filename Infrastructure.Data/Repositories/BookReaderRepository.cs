@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Domain.Interfaces;
 using Domain.Models;
 using Infrastructure.Data.Context;
@@ -14,6 +15,11 @@ namespace Infrastructure.Data.Repositories
         {
             _bookReaders = dbContext.Set<BookReader>();
 
+        }
+
+        public BookReader GetByReaderIdBookId(Guid readerId, Guid bookId)
+        {
+            return _bookReaders.FirstOrDefault(x => x.ReaderId == readerId && x.BookId == bookId);
         }
     }
 }

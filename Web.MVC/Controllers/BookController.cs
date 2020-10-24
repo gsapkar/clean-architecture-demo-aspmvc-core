@@ -71,5 +71,12 @@ namespace Web.MVC.Controllers
 
             return View(model);
         }
+
+        public IActionResult SearchByFullName(string searchTerm)
+        {
+            BookListViewModel model = _bookService.FullTextSearch(searchTerm);
+
+            return Json(model.Books);
+        }
     }
 }

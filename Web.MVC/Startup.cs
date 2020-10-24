@@ -15,7 +15,6 @@ using Microsoft.Extensions.Hosting;
 using Infrastructure.Data.Context;
 using Infrastructure.IoC;
 using Application;
-using Web.MVC.Filters;
 
 namespace Web.MVC
 {
@@ -55,11 +54,7 @@ namespace Web.MVC
 
             services.AddApplicationLayer();
 
-            services.AddControllersWithViews(options =>
-            {
-                options.Filters.Add(typeof(SessionFilter));
-            }).AddRazorRuntimeCompilation();
-            services.AddControllersWithViews();
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddRazorPages();
         }
 
