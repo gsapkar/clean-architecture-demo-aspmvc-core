@@ -1,8 +1,0 @@
-/Users/goce/Projects/CleanArchitectureDemo/Domain/bin/Debug/netcoreapp3.1/Domain.deps.json
-/Users/goce/Projects/CleanArchitectureDemo/Domain/bin/Debug/netcoreapp3.1/Domain.dll
-/Users/goce/Projects/CleanArchitectureDemo/Domain/bin/Debug/netcoreapp3.1/Domain.pdb
-/Users/goce/Projects/CleanArchitectureDemo/Domain/obj/Debug/netcoreapp3.1/Domain.AssemblyInfoInputs.cache
-/Users/goce/Projects/CleanArchitectureDemo/Domain/obj/Debug/netcoreapp3.1/Domain.AssemblyInfo.cs
-/Users/goce/Projects/CleanArchitectureDemo/Domain/obj/Debug/netcoreapp3.1/Domain.csproj.CoreCompileInputs.cache
-/Users/goce/Projects/CleanArchitectureDemo/Domain/obj/Debug/netcoreapp3.1/Domain.dll
-/Users/goce/Projects/CleanArchitectureDemo/Domain/obj/Debug/netcoreapp3.1/Domain.pdb
