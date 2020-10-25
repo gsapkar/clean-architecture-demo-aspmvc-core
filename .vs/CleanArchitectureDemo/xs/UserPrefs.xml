@@ -1,79 +1,27 @@
 ﻿<Properties GitUserInfo="UsingMD" StartupConfiguration="{6E808462-AF26-46FC-9D7C-F0F9988976A2}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Web.MVC/Migrations/20201003192650_Initial-Migration.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument=".gitignore">
     <Files>
       <File FileName="Domain/Models/Book.cs" Line="1" Column="1" />
       <File FileName="Infrastructure.Data/Context/LibraryDbContext.cs" />
-      <File FileName="Web.MVC/Data/ApplicationDbContext.cs" />
-      <File FileName="Application/Interfaces/IBookService.cs" />
-      <File FileName="Domain/Interfaces/IBookRepository.cs" />
-      <File FileName="Infrastructure.Data/Repositories/BookRepository.cs" />
-      <File FileName="Infrastructure.IoC/DependencyContainer.cs" />
-      <File FileName="Web.MVC/Program.cs" Line="7" Column="1" />
-      <File FileName="Infrastructure.Data/Context/LibraryDbContextSeed.cs" />
-      <File FileName="Web.MVC/Controllers/HomeController.cs" />
-      <File FileName="Web.MVC/Views/Book/Index.cshtml" />
-      <File FileName="Web.MVC/Views/Shared/_Layout.cshtml" />
-      <File FileName="Domain/Models/Base/BaseEntity.cs" />
-      <File FileName="Domain/Models/Base/AuditableBaseEntity.cs" />
-      <File FileName="Domain/Interfaces/Base/IBaseRepository.cs" />
-      <File FileName="Application/ServiceExtensions.cs" />
-      <File FileName="Domain/Domain.csproj" />
-      <File FileName="Domain/Models/Reader.cs" />
-      <File FileName="Domain/Models/BookReader.cs" />
-      <File FileName="Infrastructure.Data/Migrations/20201017201230_Readers and BookReaders.Designer.cs" />
-      <File FileName="Infrastructure.Data/Migrations/20201017201230_Readers and BookReaders.cs" />
-      <File FileName="Web.MVC/appsettings.json" />
-      <File FileName="Domain/Interfaces/IReaderRepository.cs" />
-      <File FileName="Domain/Interfaces/IBookReaderRepository.cs" />
-      <File FileName="Infrastructure.Data/Repositories/ReaderRepository.cs" />
-      <File FileName="Infrastructure.Data/Repositories/BookReaderRepository.cs" />
-      <File FileName="Web.MVC/Views/Book/AddOrEdit.cshtml" />
-      <File FileName="Web.MVC/Views/_ViewImports.cshtml" />
-      <File FileName="Web.MVC/Views/_ViewStart.cshtml" />
-      <File FileName="Application/ViewModels/Reader/ReaderListViewModel.cs" />
-      <File FileName="Application/ViewModels/Reader/ReaderViewModel.cs" />
-      <File FileName="Application/Interfaces/IReaderService.cs" />
-      <File FileName="Application/Services/ReaderService.cs" />
-      <File FileName="Web.MVC/Views/Shared/_LoginPartial.cshtml" />
-      <File FileName="Web.MVC/wwwroot/js/readers-select2.js" />
-      <File FileName="Web.MVC/wwwroot/js/site.js" />
-      <File FileName="Web.MVC/Views/Book/Loan.cshtml" />
-      <File FileName="Infrastructure.Data/Repositories/Base/BaseRepository.cs" />
-      <File FileName="Web.MVC/Startup.cs" />
-      <File FileName="Application/ViewModels/Book/BookListViewModel.cs" />
-      <File FileName="Application/ViewModels/Book/BookViewModel.cs" />
-      <File FileName="Application/ViewModels/Reader/LoanBookViewModel.cs" />
-      <File FileName="Web.MVC/Migrations/20201003192650_Initial-Migration.cs" Line="209" Column="13" />
+      <File FileName="Application/Interfaces/IBookService.cs" Line="1" Column="1" />
+      <File FileName="Web.MVC/Controllers/HomeController.cs" Line="36" Column="33" />
+      <File FileName="Web.MVC/Middlewares/ErrorLoggingMiddleware.cs" Line="36" Column="1" />
+      <File FileName="Web.MVC/Startup.cs" Line="1" Column="1" />
+      <File FileName="Web.MVC/Program.cs" Line="1" Column="1" />
+      <File FileName="Web.MVC/appsettings.json" Line="18" Column="23" />
+      <File FileName=".gitignore" Line="274" Column="68" />
       <File FileName="Application/Services/BookService.cs" Line="25" Column="72" NotebookId="1" />
       <File FileName="Web.MVC/Controllers/ReaderController.cs" NotebookId="1" />
       <File FileName="Web.MVC/Controllers/BookController.cs" NotebookId="1" />
       <File FileName="Web.MVC/Views/Reader/AddOrEdit.cshtml" NotebookId="1" />
       <File FileName="Web.MVC/Views/Reader/Index.cshtml" NotebookId="1" />
       <File FileName="Application/Mappings/LibraryProfile.cs" NotebookId="1" />
-      <File FileName="README.md" Line="23" Column="22" NotebookId="1" />
+      <File FileName="README.md" Line="39" Column="1" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="CleanArchitectureDemo" expanded="True" selected="True">
-            <Node name="Domain" expanded="True" />
-            <Node name="Infrastructure.Data" expanded="True" />
-            <Node name="Solution Items" expanded="True" />
-            <Node name="Web.MVC" expanded="True">
-              <Node name="Web.MVC" expanded="True">
-                <Node name="Controllers" expanded="True" />
-                <Node name="Migrations" expanded="True" />
-                <Node name="Views" expanded="True">
-                  <Node name="Book" expanded="True" />
-                  <Node name="Reader" expanded="True" />
-                  <Node name="Shared" expanded="True" />
-                </Node>
-                <Node name="wwwroot" expanded="True">
-                  <Node name="js" expanded="True" />
-                </Node>
-              </Node>
-            </Node>
-          </Node>
+          <Node name="CleanArchitectureDemo" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
@@ -82,7 +30,9 @@
   <MonoDevelop.Ide.ItemProperties.Web.MVC.Web.MVC PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/goce/Projects/CleanArchitectureDemo/Web.MVC/Middlewares/ErrorLoggingMiddleware.cs" relfile="Web.MVC/Middlewares/ErrorLoggingMiddleware.cs" line="36" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">

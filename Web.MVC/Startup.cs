@@ -15,6 +15,8 @@ using Microsoft.Extensions.Hosting;
 using Infrastructure.Data.Context;
 using Infrastructure.IoC;
 using Application;
+using Serilog;
+using Web.MVC.Middlewares;
 
 namespace Web.MVC
 {
@@ -74,6 +76,11 @@ namespace Web.MVC
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            // Request logging middleware
+            app.UseSerilogRequestLogging();
+            // Error Logging Middleware
+            app.UseMiddleware<ErrorLoggingMiddleware>();
 
             app.UseRouting();
 

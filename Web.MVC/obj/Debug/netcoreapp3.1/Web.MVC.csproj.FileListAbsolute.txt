@@ -1,5 +1,7 @@
 /Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/appsettings.Development.json
 /Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/appsettings.json
+/Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/Logs/log20201024.json
+/Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/Logs/log20201025.json
 /Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
 /Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/Web.MVC.StaticWebAssets.xml
 /Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/app.db
@@ -332,6 +334,18 @@
 /Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 /Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
 /Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/NuGet.Frameworks.dll
+/Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/Serilog.dll
+/Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/Serilog.AspNetCore.dll
+/Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/Serilog.Enrichers.Environment.dll
+/Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/Serilog.Enrichers.Process.dll
+/Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/Serilog.Enrichers.Thread.dll
+/Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/Serilog.Extensions.Hosting.dll
+/Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/Serilog.Extensions.Logging.dll
+/Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/Serilog.Formatting.Compact.dll
+/Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/Serilog.Settings.Configuration.dll
+/Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/Serilog.Sinks.Console.dll
+/Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/Serilog.Sinks.Debug.dll
+/Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/Serilog.Sinks.File.dll
 /Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/SQLitePCLRaw.batteries_v2.dll
 /Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/SQLitePCLRaw.nativelibrary.dll
 /Users/goce/Projects/CleanArchitectureDemo/Web.MVC/bin/Debug/netcoreapp3.1/SQLitePCLRaw.core.dll

@@ -20,12 +20,30 @@ namespace Web.MVC.Controllers
 
         public IActionResult Index()
         {
+            //throw new Exception("From Home controller");
+
             return View();
         }
 
         public IActionResult Privacy()
         {
+            _logger.LogInformation("Requested the Privacy Page");
+
+            try
+            {
+                throw new Exception("Privacy Exception");
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "Exception Caught");
+            }
+
             return View();
+        }
+
+        public IActionResult ThrowError()
+        {
+            throw new Exception("Throw Error");
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

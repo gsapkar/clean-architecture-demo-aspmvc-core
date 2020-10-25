@@ -805,6 +805,21 @@
           "buildMultiTargeting/_._": {}
         }
       },
+      "Microsoft.Extensions.Hosting.Abstractions/2.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.1.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "2.1.0",
+          "Microsoft.Extensions.Logging.Abstractions": "2.1.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Hosting.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Hosting.Abstractions.dll": {}
+        }
+      },
       "Microsoft.Extensions.Identity.Core/3.1.8": {
         "type": "package",
         "dependencies": {
@@ -877,6 +892,21 @@
         },
         "runtime": {
           "lib/netcoreapp3.1/Microsoft.Extensions.Options.dll": {}
+        }
+      },
+      "Microsoft.Extensions.Options.ConfigurationExtensions/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Configuration.Binder": "2.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0",
+          "Microsoft.Extensions.Options": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll": {}
         }
       },
       "Microsoft.Extensions.Primitives/3.1.8": {
@@ -1417,6 +1447,174 @@
           }
         }
       },
+      "Serilog/2.9.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Serilog.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.dll": {}
+        }
+      },
+      "Serilog.AspNetCore/3.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection": "3.1.2",
+          "Microsoft.Extensions.Logging": "3.1.2",
+          "Serilog": "2.9.0",
+          "Serilog.Extensions.Hosting": "3.1.0",
+          "Serilog.Formatting.Compact": "1.1.0",
+          "Serilog.Settings.Configuration": "3.1.0",
+          "Serilog.Sinks.Console": "3.1.1",
+          "Serilog.Sinks.Debug": "1.0.1",
+          "Serilog.Sinks.File": "4.1.0"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Serilog.AspNetCore.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Serilog.AspNetCore.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Serilog.Enrichers.Environment/2.1.3": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.1",
+          "Serilog": "2.3.0"
+        },
+        "compile": {
+          "lib/netstandard1.5/Serilog.Enrichers.Environment.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.5/Serilog.Enrichers.Environment.dll": {}
+        }
+      },
+      "Serilog.Enrichers.Process/2.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.0.0",
+          "System.Diagnostics.Process": "4.1.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/Serilog.Enrichers.Process.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/Serilog.Enrichers.Process.dll": {}
+        }
+      },
+      "Serilog.Enrichers.Thread/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Enrichers.Thread.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Enrichers.Thread.dll": {}
+        }
+      },
+      "Serilog.Extensions.Hosting/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.1.0",
+          "Microsoft.Extensions.Hosting.Abstractions": "2.1.0",
+          "Microsoft.Extensions.Logging.Abstractions": "2.1.0",
+          "Serilog": "2.8.0",
+          "Serilog.Extensions.Logging": "3.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Extensions.Hosting.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Extensions.Hosting.dll": {}
+        }
+      },
+      "Serilog.Extensions.Logging/3.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "2.0.0",
+          "Serilog": "2.8.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Extensions.Logging.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Extensions.Logging.dll": {}
+        }
+      },
+      "Serilog.Formatting.Compact/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.8.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Formatting.Compact.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Formatting.Compact.dll": {}
+        }
+      },
+      "Serilog.Settings.Configuration/3.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyModel": "2.0.4",
+          "Microsoft.Extensions.Options.ConfigurationExtensions": "2.0.0",
+          "Serilog": "2.6.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Settings.Configuration.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Settings.Configuration.dll": {}
+        }
+      },
+      "Serilog.Sinks.Console/3.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.5.0",
+          "System.Console": "4.3.0",
+          "System.Runtime.InteropServices": "4.3.0",
+          "System.Runtime.InteropServices.RuntimeInformation": "4.3.0"
+        },
+        "compile": {
+          "lib/netcoreapp1.1/Serilog.Sinks.Console.dll": {}
+        },
+        "runtime": {
+          "lib/netcoreapp1.1/Serilog.Sinks.Console.dll": {}
+        }
+      },
+      "Serilog.Sinks.Debug/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.5.0",
+          "System.Diagnostics.Debug": "4.3.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Sinks.Debug.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Sinks.Debug.dll": {}
+        }
+      },
+      "Serilog.Sinks.File/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Serilog": "2.5.0",
+          "System.IO.FileSystem": "4.0.1",
+          "System.Text.Encoding.Extensions": "4.0.11",
+          "System.Threading.Timer": "4.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Serilog.Sinks.File.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Serilog.Sinks.File.dll": {}
+        }
+      },
       "SQLitePCLRaw.bundle_e_sqlite3/2.0.2": {
         "type": "package",
         "dependencies": {
@@ -1832,6 +2030,49 @@
         },
         "runtime": {
           "lib/netstandard1.3/System.Diagnostics.DiagnosticSource.dll": {}
+        }
+      },
+      "System.Diagnostics.Process/4.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.NETCore.Platforms": "1.0.1",
+          "Microsoft.Win32.Primitives": "4.0.1",
+          "Microsoft.Win32.Registry": "4.0.0",
+          "System.Collections": "4.0.11",
+          "System.Diagnostics.Debug": "4.0.11",
+          "System.Globalization": "4.0.11",
+          "System.IO": "4.1.0",
+          "System.IO.FileSystem": "4.0.1",
+          "System.IO.FileSystem.Primitives": "4.0.1",
+          "System.Resources.ResourceManager": "4.0.1",
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Extensions": "4.1.0",
+          "System.Runtime.Handles": "4.0.1",
+          "System.Runtime.InteropServices": "4.1.0",
+          "System.Text.Encoding": "4.0.11",
+          "System.Text.Encoding.Extensions": "4.0.11",
+          "System.Threading": "4.0.11",
+          "System.Threading.Tasks": "4.0.11",
+          "System.Threading.Thread": "4.0.0",
+          "System.Threading.ThreadPool": "4.0.10",
+          "runtime.native.System": "4.0.0"
+        },
+        "compile": {
+          "ref/netstandard1.4/System.Diagnostics.Process.dll": {}
+        },
+        "runtimeTargets": {
+          "runtimes/linux/lib/netstandard1.4/System.Diagnostics.Process.dll": {
+            "assetType": "runtime",
+            "rid": "linux"
+          },
+          "runtimes/osx/lib/netstandard1.4/System.Diagnostics.Process.dll": {
+            "assetType": "runtime",
+            "rid": "osx"
+          },
+          "runtimes/win/lib/netstandard1.4/System.Diagnostics.Process.dll": {
+            "assetType": "runtime",
+            "rid": "win"
+          }
         }
       },
       "System.Diagnostics.Tools/4.3.0": {
@@ -2891,6 +3132,31 @@
         },
         "runtime": {
           "lib/netcoreapp2.1/_._": {}
+        }
+      },
+      "System.Threading.Thread/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.1.0"
+        },
+        "compile": {
+          "ref/netstandard1.3/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Threading.Thread.dll": {}
+        }
+      },
+      "System.Threading.ThreadPool/4.0.10": {
+        "type": "package",
+        "dependencies": {
+          "System.Runtime": "4.1.0",
+          "System.Runtime.Handles": "4.0.1"
+        },
+        "compile": {
+          "ref/netstandard1.3/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/System.Threading.ThreadPool.dll": {}
         }
       },
       "System.Threading.Timer/4.3.0": {
@@ -4096,6 +4362,19 @@
         "tasks/netstandard2.0/Microsoft.Extensions.FileProviders.Embedded.Manifest.Task.dll"
       ]
     },
+    "Microsoft.Extensions.Hosting.Abstractions/2.1.0": {
+      "sha512": "BpMaoBxdXr5VD0yk7rYN6R8lAU9X9JbvsPveNdKT+llIn3J5s4sxpWqaSG/NnzTzTLU5eJE5nrecTl7clg/7dQ==",
+      "type": "package",
+      "path": "microsoft.extensions.hosting.abstractions/2.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Hosting.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Hosting.Abstractions.xml",
+        "microsoft.extensions.hosting.abstractions.2.1.0.nupkg.sha512",
+        "microsoft.extensions.hosting.abstractions.nuspec"
+      ]
+    },
     "Microsoft.Extensions.Identity.Core/3.1.8": {
       "sha512": "Cm9VWHLNSD9dr2u0BVNp6rk+pB020HaD7f5rxJnL3wv4aPkcIXhZEnAV5WIQHXVtzognhAaOX2e2JP8yD1yS1Q==",
       "type": "package",
@@ -4187,6 +4466,19 @@
         "lib/netstandard2.0/Microsoft.Extensions.Options.xml",
         "microsoft.extensions.options.3.1.8.nupkg.sha512",
         "microsoft.extensions.options.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Options.ConfigurationExtensions/2.0.0": {
+      "sha512": "Y/lGICwO27fCkQRK3tZseVzFjZaxfGmui990E67sB4MuiPzdJHnJDS/BeYWrHShSSBgCl4KyKRx4ux686fftPg==",
+      "type": "package",
+      "path": "microsoft.extensions.options.configurationextensions/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Options.ConfigurationExtensions.xml",
+        "microsoft.extensions.options.configurationextensions.2.0.0.nupkg.sha512",
+        "microsoft.extensions.options.configurationextensions.nuspec"
       ]
     },
     "Microsoft.Extensions.Primitives/3.1.8": {
@@ -5232,6 +5524,203 @@
         "version.txt"
       ]
     },
+    "Serilog/2.9.0": {
+      "sha512": "QzcrD33A3+CsVvwi1I5CSei67ikQnkGrw7SscgL+vZTghaC2aNYg8fiUcedXHzKJFNjgje9rBjzwYGQTKEaXaA==",
+      "type": "package",
+      "path": "serilog/2.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Serilog.dll",
+        "lib/net45/Serilog.xml",
+        "lib/net46/Serilog.dll",
+        "lib/net46/Serilog.xml",
+        "lib/netstandard1.0/Serilog.dll",
+        "lib/netstandard1.0/Serilog.xml",
+        "lib/netstandard1.3/Serilog.dll",
+        "lib/netstandard1.3/Serilog.xml",
+        "lib/netstandard2.0/Serilog.dll",
+        "lib/netstandard2.0/Serilog.xml",
+        "serilog.2.9.0.nupkg.sha512",
+        "serilog.nuspec"
+      ]
+    },
+    "Serilog.AspNetCore/3.4.0": {
+      "sha512": "X18yum5NxFeiTPBw0UvbAeq/V2sFTiElNaF5b4MpvInm7a847BCX7SeDdwziEutfqOg5L+dLjWiY66LQf0vM7A==",
+      "type": "package",
+      "path": "serilog.aspnetcore/3.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netcoreapp3.1/Serilog.AspNetCore.dll",
+        "lib/netcoreapp3.1/Serilog.AspNetCore.xml",
+        "lib/netstandard2.0/Serilog.AspNetCore.dll",
+        "lib/netstandard2.0/Serilog.AspNetCore.xml",
+        "serilog-extension-nuget.png",
+        "serilog.aspnetcore.3.4.0.nupkg.sha512",
+        "serilog.aspnetcore.nuspec"
+      ]
+    },
+    "Serilog.Enrichers.Environment/2.1.3": {
+      "sha512": "LclB09MAKLU14PXxlPiiejZxer1JhtbaVd1Zlb4EgllPYhzePYljx/jqW5uIXBe89hTtGlsCxjHLg9H6s1U24Q==",
+      "type": "package",
+      "path": "serilog.enrichers.environment/2.1.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Serilog.Enrichers.Environment.dll",
+        "lib/netstandard1.3/Serilog.Enrichers.Environment.dll",
+        "lib/netstandard1.5/Serilog.Enrichers.Environment.dll",
+        "serilog.enrichers.environment.2.1.3.nupkg.sha512",
+        "serilog.enrichers.environment.nuspec"
+      ]
+    },
+    "Serilog.Enrichers.Process/2.0.1": {
+      "sha512": "Qq7Gyz/LoC9jjZPutTfzfrBToEkPSdNLfhalLDxNa9JqCZY2wh+rGsZEEE/952zeqV9pzqzcEKAxuVZoBfl2Gw==",
+      "type": "package",
+      "path": "serilog.enrichers.process/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Serilog.Enrichers.Process.dll",
+        "lib/netstandard1.3/Serilog.Enrichers.Process.dll",
+        "serilog.enrichers.process.2.0.1.nupkg.sha512",
+        "serilog.enrichers.process.nuspec"
+      ]
+    },
+    "Serilog.Enrichers.Thread/3.1.0": {
+      "sha512": "85lWsGRJpRxvKT6j/H67no55SUBsBIvp556TKuBTGhjtoPeq+L7j/sDWbgAtvT0p7u7/phJyX6j35PQ4Vtqw0g==",
+      "type": "package",
+      "path": "serilog.enrichers.thread/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Serilog.Enrichers.Thread.dll",
+        "lib/net45/Serilog.Enrichers.Thread.xml",
+        "lib/netstandard1.0/Serilog.Enrichers.Thread.dll",
+        "lib/netstandard1.0/Serilog.Enrichers.Thread.xml",
+        "lib/netstandard2.0/Serilog.Enrichers.Thread.dll",
+        "lib/netstandard2.0/Serilog.Enrichers.Thread.xml",
+        "serilog.enrichers.thread.3.1.0.nupkg.sha512",
+        "serilog.enrichers.thread.nuspec"
+      ]
+    },
+    "Serilog.Extensions.Hosting/3.1.0": {
+      "sha512": "+NnmORRm9Tzzb9ZY9mgLEr9TRdayaOUdiegq9/4Bv8MSDpBeydxF+X3ea5riui1EzGUId+hpwy7j1hqcXs5Cdw==",
+      "type": "package",
+      "path": "serilog.extensions.hosting/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Serilog.Extensions.Hosting.dll",
+        "lib/netstandard2.0/Serilog.Extensions.Hosting.xml",
+        "serilog.extensions.hosting.3.1.0.nupkg.sha512",
+        "serilog.extensions.hosting.nuspec"
+      ]
+    },
+    "Serilog.Extensions.Logging/3.0.1": {
+      "sha512": "U0xbGoZuxJRjE3C5vlCfrf9a4xHTmbrCXKmaA14cHAqiT1Qir0rkV7Xss9GpPJR3MRYH19DFUUqZ9hvWeJrzdQ==",
+      "type": "package",
+      "path": "serilog.extensions.logging/3.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Serilog.Extensions.Logging.dll",
+        "lib/netstandard2.0/Serilog.Extensions.Logging.xml",
+        "serilog.extensions.logging.3.0.1.nupkg.sha512",
+        "serilog.extensions.logging.nuspec"
+      ]
+    },
+    "Serilog.Formatting.Compact/1.1.0": {
+      "sha512": "pNroKVjo+rDqlxNG5PXkRLpfSCuDOBY0ri6jp9PLe505ljqwhwZz8ospy2vWhQlFu5GkIesh3FcDs4n7sWZODA==",
+      "type": "package",
+      "path": "serilog.formatting.compact/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/Serilog.Formatting.Compact.dll",
+        "lib/net452/Serilog.Formatting.Compact.xml",
+        "lib/netstandard1.1/Serilog.Formatting.Compact.dll",
+        "lib/netstandard1.1/Serilog.Formatting.Compact.xml",
+        "lib/netstandard2.0/Serilog.Formatting.Compact.dll",
+        "lib/netstandard2.0/Serilog.Formatting.Compact.xml",
+        "serilog.formatting.compact.1.1.0.nupkg.sha512",
+        "serilog.formatting.compact.nuspec"
+      ]
+    },
+    "Serilog.Settings.Configuration/3.1.0": {
+      "sha512": "BS+G1dhThTHBOYm8R21JNlR+Nh7ETAOlJuL1P6te1rOG98eV1vos5EyWRTGr0AbHgySxsGu1Q/evfFxS9+Gk1Q==",
+      "type": "package",
+      "path": "serilog.settings.configuration/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net451/Serilog.Settings.Configuration.dll",
+        "lib/net451/Serilog.Settings.Configuration.xml",
+        "lib/net461/Serilog.Settings.Configuration.dll",
+        "lib/net461/Serilog.Settings.Configuration.xml",
+        "lib/netstandard2.0/Serilog.Settings.Configuration.dll",
+        "lib/netstandard2.0/Serilog.Settings.Configuration.xml",
+        "serilog.settings.configuration.3.1.0.nupkg.sha512",
+        "serilog.settings.configuration.nuspec"
+      ]
+    },
+    "Serilog.Sinks.Console/3.1.1": {
+      "sha512": "56mI5AqvyF/i/c2451nvV71kq370XOCE4Uu5qiaJ295sOhMb9q3BWwG7mWLOVSnmpWiq0SBT3SXfgRXGNP6vzA==",
+      "type": "package",
+      "path": "serilog.sinks.console/3.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Serilog.Sinks.Console.dll",
+        "lib/net45/Serilog.Sinks.Console.xml",
+        "lib/netcoreapp1.1/Serilog.Sinks.Console.dll",
+        "lib/netcoreapp1.1/Serilog.Sinks.Console.xml",
+        "lib/netstandard1.3/Serilog.Sinks.Console.dll",
+        "lib/netstandard1.3/Serilog.Sinks.Console.xml",
+        "serilog.sinks.console.3.1.1.nupkg.sha512",
+        "serilog.sinks.console.nuspec"
+      ]
+    },
+    "Serilog.Sinks.Debug/1.0.1": {
+      "sha512": "nE5wvw9+J/V4lA+rEkFUETGjBabK8IlLQY5Z9KDzoo5LvILC4vhTOXLs7DGYs8h5juIf2nLZnVxHDXf404FqEQ==",
+      "type": "package",
+      "path": "serilog.sinks.debug/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Serilog.Sinks.Debug.dll",
+        "lib/net45/Serilog.Sinks.Debug.xml",
+        "lib/net46/Serilog.Sinks.Debug.dll",
+        "lib/net46/Serilog.Sinks.Debug.xml",
+        "lib/netstandard1.0/Serilog.Sinks.Debug.dll",
+        "lib/netstandard1.0/Serilog.Sinks.Debug.xml",
+        "lib/netstandard2.0/Serilog.Sinks.Debug.dll",
+        "lib/netstandard2.0/Serilog.Sinks.Debug.xml",
+        "serilog.sinks.debug.1.0.1.nupkg.sha512",
+        "serilog.sinks.debug.nuspec"
+      ]
+    },
+    "Serilog.Sinks.File/4.1.0": {
+      "sha512": "U0b34w+ZikbqWEZ3ui7BdzxY/19zwrdhLtI3o6tfmLdD3oXxg7n2TZJjwCCTlKPgRuYic9CBWfrZevbb70mTaw==",
+      "type": "package",
+      "path": "serilog.sinks.file/4.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Serilog.Sinks.File.dll",
+        "lib/net45/Serilog.Sinks.File.pdb",
+        "lib/net45/Serilog.Sinks.File.xml",
+        "lib/netstandard1.3/Serilog.Sinks.File.dll",
+        "lib/netstandard1.3/Serilog.Sinks.File.pdb",
+        "lib/netstandard1.3/Serilog.Sinks.File.xml",
+        "lib/netstandard2.0/Serilog.Sinks.File.dll",
+        "lib/netstandard2.0/Serilog.Sinks.File.pdb",
+        "lib/netstandard2.0/Serilog.Sinks.File.xml",
+        "serilog.sinks.file.4.1.0.nupkg.sha512",
+        "serilog.sinks.file.nuspec"
+      ]
+    },
     "SQLitePCLRaw.bundle_e_sqlite3/2.0.2": {
       "sha512": "OVPI/nh5AqfLCIKhAYqjCa6AHhc7oKApGcGM3UhMRSerFiBx58nSpGwxVFdMgjOCWZR+fA49nzsnKlWp5hFo8w==",
       "type": "package",
@@ -6107,6 +6596,63 @@
         "system.diagnostics.diagnosticsource.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "System.Diagnostics.Process/4.1.0": {
+      "sha512": "mpVZ5bnlSs3tTeJ6jYyDJEIa6tavhAd88lxq1zbYhkkCu0Pno2+gHXcvZcoygq2d8JxW3gojXqNJMTAshduqZA==",
+      "type": "package",
+      "path": "system.diagnostics.process/4.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Diagnostics.Process.dll",
+        "lib/net461/System.Diagnostics.Process.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Diagnostics.Process.dll",
+        "ref/net461/System.Diagnostics.Process.dll",
+        "ref/netstandard1.3/System.Diagnostics.Process.dll",
+        "ref/netstandard1.3/System.Diagnostics.Process.xml",
+        "ref/netstandard1.3/de/System.Diagnostics.Process.xml",
+        "ref/netstandard1.3/es/System.Diagnostics.Process.xml",
+        "ref/netstandard1.3/fr/System.Diagnostics.Process.xml",
+        "ref/netstandard1.3/it/System.Diagnostics.Process.xml",
+        "ref/netstandard1.3/ja/System.Diagnostics.Process.xml",
+        "ref/netstandard1.3/ko/System.Diagnostics.Process.xml",
+        "ref/netstandard1.3/ru/System.Diagnostics.Process.xml",
+        "ref/netstandard1.3/zh-hans/System.Diagnostics.Process.xml",
+        "ref/netstandard1.3/zh-hant/System.Diagnostics.Process.xml",
+        "ref/netstandard1.4/System.Diagnostics.Process.dll",
+        "ref/netstandard1.4/System.Diagnostics.Process.xml",
+        "ref/netstandard1.4/de/System.Diagnostics.Process.xml",
+        "ref/netstandard1.4/es/System.Diagnostics.Process.xml",
+        "ref/netstandard1.4/fr/System.Diagnostics.Process.xml",
+        "ref/netstandard1.4/it/System.Diagnostics.Process.xml",
+        "ref/netstandard1.4/ja/System.Diagnostics.Process.xml",
+        "ref/netstandard1.4/ko/System.Diagnostics.Process.xml",
+        "ref/netstandard1.4/ru/System.Diagnostics.Process.xml",
+        "ref/netstandard1.4/zh-hans/System.Diagnostics.Process.xml",
+        "ref/netstandard1.4/zh-hant/System.Diagnostics.Process.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/linux/lib/netstandard1.4/System.Diagnostics.Process.dll",
+        "runtimes/osx/lib/netstandard1.4/System.Diagnostics.Process.dll",
+        "runtimes/win/lib/net46/System.Diagnostics.Process.dll",
+        "runtimes/win/lib/net461/System.Diagnostics.Process.dll",
+        "runtimes/win/lib/netstandard1.4/System.Diagnostics.Process.dll",
+        "runtimes/win7/lib/netcore50/_._",
+        "system.diagnostics.process.4.1.0.nupkg.sha512",
+        "system.diagnostics.process.nuspec"
       ]
     },
     "System.Diagnostics.Tools/4.3.0": {
@@ -9219,6 +9765,86 @@
         "version.txt"
       ]
     },
+    "System.Threading.Thread/4.0.0": {
+      "sha512": "gIdJqDXlOr5W9zeqFErLw3dsOsiShSCYtF9SEHitACycmvNvY8odf9kiKvp6V7aibc8C4HzzNBkWXjyfn7plbQ==",
+      "type": "package",
+      "path": "system.threading.thread/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Threading.Thread.dll",
+        "lib/netcore50/_._",
+        "lib/netstandard1.3/System.Threading.Thread.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Threading.Thread.dll",
+        "ref/netstandard1.3/System.Threading.Thread.dll",
+        "ref/netstandard1.3/System.Threading.Thread.xml",
+        "ref/netstandard1.3/de/System.Threading.Thread.xml",
+        "ref/netstandard1.3/es/System.Threading.Thread.xml",
+        "ref/netstandard1.3/fr/System.Threading.Thread.xml",
+        "ref/netstandard1.3/it/System.Threading.Thread.xml",
+        "ref/netstandard1.3/ja/System.Threading.Thread.xml",
+        "ref/netstandard1.3/ko/System.Threading.Thread.xml",
+        "ref/netstandard1.3/ru/System.Threading.Thread.xml",
+        "ref/netstandard1.3/zh-hans/System.Threading.Thread.xml",
+        "ref/netstandard1.3/zh-hant/System.Threading.Thread.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.threading.thread.4.0.0.nupkg.sha512",
+        "system.threading.thread.nuspec"
+      ]
+    },
+    "System.Threading.ThreadPool/4.0.10": {
+      "sha512": "IMXgB5Vf/5Qw1kpoVgJMOvUO1l32aC+qC3OaIZjWJOjvcxuxNWOK2ZTWWYXfij22NHxT2j1yWX5vlAeQWld9vA==",
+      "type": "package",
+      "path": "system.threading.threadpool/4.0.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Threading.ThreadPool.dll",
+        "lib/netcore50/_._",
+        "lib/netstandard1.3/System.Threading.ThreadPool.dll",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Threading.ThreadPool.dll",
+        "ref/netstandard1.3/System.Threading.ThreadPool.dll",
+        "ref/netstandard1.3/System.Threading.ThreadPool.xml",
+        "ref/netstandard1.3/de/System.Threading.ThreadPool.xml",
+        "ref/netstandard1.3/es/System.Threading.ThreadPool.xml",
+        "ref/netstandard1.3/fr/System.Threading.ThreadPool.xml",
+        "ref/netstandard1.3/it/System.Threading.ThreadPool.xml",
+        "ref/netstandard1.3/ja/System.Threading.ThreadPool.xml",
+        "ref/netstandard1.3/ko/System.Threading.ThreadPool.xml",
+        "ref/netstandard1.3/ru/System.Threading.ThreadPool.xml",
+        "ref/netstandard1.3/zh-hans/System.Threading.ThreadPool.xml",
+        "ref/netstandard1.3/zh-hant/System.Threading.ThreadPool.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.threading.threadpool.4.0.10.nupkg.sha512",
+        "system.threading.threadpool.nuspec"
+      ]
+    },
     "System.Threading.Timer/4.3.0": {
       "sha512": "Z6YfyYTCg7lOZjJzBjONJTFKGN9/NIYKSxhU5GRd+DTwHSZyvWp1xuI5aR+dLg+ayyC5Xv57KiY4oJ0tMO89fQ==",
       "type": "package",
@@ -9558,7 +10184,13 @@
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.8",
       "Microsoft.EntityFrameworkCore.Sqlite >= 3.1.8",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.8",
-      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.3"
+      "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 3.1.3",
+      "Serilog.AspNetCore >= 3.4.0",
+      "Serilog.Enrichers.Environment >= 2.1.3",
+      "Serilog.Enrichers.Process >= 2.0.1",
+      "Serilog.Enrichers.Thread >= 3.1.0",
+      "Serilog.Settings.Configuration >= 3.1.0",
+      "Serilog.Sinks.File >= 4.1.0"
     ]
   },
   "packageFolders": {
@@ -9634,6 +10266,30 @@
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
             "target": "Package",
             "version": "[3.1.3, )"
+          },
+          "Serilog.AspNetCore": {
+            "target": "Package",
+            "version": "[3.4.0, )"
+          },
+          "Serilog.Enrichers.Environment": {
+            "target": "Package",
+            "version": "[2.1.3, )"
+          },
+          "Serilog.Enrichers.Process": {
+            "target": "Package",
+            "version": "[2.0.1, )"
+          },
+          "Serilog.Enrichers.Thread": {
+            "target": "Package",
+            "version": "[3.1.0, )"
+          },
+          "Serilog.Settings.Configuration": {
+            "target": "Package",
+            "version": "[3.1.0, )"
+          },
+          "Serilog.Sinks.File": {
+            "target": "Package",
+            "version": "[4.1.0, )"
           }
         },
         "imports": [
